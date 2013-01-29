@@ -1,9 +1,12 @@
 <html>
     <body>
         <h1>Widget test</h1>
-        <div class="widget-embed" data="parameter=123&user=emilisto&_base_url=http://localhost:8000/example-app/app"></div>
-        <!--<div class="widget-embed" data="parameter=123&user=emilisto"></div>-->
-        <script src="/dist/widget.load.v1.default.js"></script>
+
+        <script src="/dist/widget.load.v1.default.js?parameter=123&user=emilisto" async></script>
+
+        <!-- Open me: http://localhost:8000/example-app/ -->
+        <!-- Open me: http://localhost:8000/example-app/?widget_base_url=http://localhost:8000/example-app/app/ -->
+
     </body>
 </html>
 

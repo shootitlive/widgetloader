@@ -39,7 +39,7 @@ define(['utils', 'namespace' ], function(utils, namespace) {
               script_tag = paramsEmbed.element;
 
           div.id = paramsEmbed.element_id;
-          script.parentNode.insertBefore(div, script_tag);
+          script_tag.parentNode.insertBefore(div, script_tag);
           paramsEmbed.el = div;
 
           loadOne(paramsEmbed);
