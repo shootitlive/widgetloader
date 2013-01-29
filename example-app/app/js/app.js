@@ -17,9 +17,9 @@
 require.config({
     deps: [],
     paths: {
-        "jquery": "../../vendor/jquery.amd",
-        "backbone": "../../vendor/backbone.amd",
-        "underscore": "../../vendor/underscore.amd"
+        "jquery": "../../../vendor/jquery.amd",
+        "backbone": "../../../vendor/backbone.amd",
+        "underscore": "../../../vendor/underscore.amd"
     },
 
     // The r.js compiler will pick this up and enclose everything under this namespace.
