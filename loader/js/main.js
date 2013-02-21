@@ -3,7 +3,7 @@
 
 var QUERYSTRING_PREFIX = 'widget_',
     defaultParameters = {
-      base_url: '//localhost:8000/example-app/dist/release'
+      base_url: config.baseUrl
 
       // Default parameters go here
 
@@ -58,6 +58,7 @@ require([ 'utils', 'loader.div', 'loader.script' ], function(utils, loadDivEmbed
 
     // Setup RequireJS and load the widget
     namespace.require.config({ baseUrl: parameters.base_url + '/js' });
+
     namespace.require([ 'app' ], function(App) {
       var app = new App(parameters);
     });

@@ -1,23 +1,28 @@
 {
-  "name": "widgetloader",
-  "title": "Widget Loader",
-  "version": "1.0.0",
-  "homepage": "http://github.com/shootitlive/widgetloader",
+
+  "name": "example-app",
+  "title": "Example App for WidgeLoader",
+  "version": "0.1.0",
+  "homepage": "http://github.com/shootitlive.com/widgetloader",
   "author": {
     "name": "Shootitlive, http://shootitlive.com"
   },
   "contributors": [
-    "Emil Stenqvist <emil@shootitlive.com>"
+    "Emil Stenqvist <emsten@gmail.com>"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/shootitlive/widgetloader.git"
   },
-  "dependencies": {
-      "grunt": "=0.3.17",
-      "grunt-contrib": "=0.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-  },
-  "keywords": []
+    "grunt": "~0.4.0",
+    "grunt-contrib-connect": "~0.1.2",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-livereload": "~0.1.1",
+    "grunt-regarde": "~0.1.1",
+    "grunt-shell": "~0.2.0",
+    "grunt-contrib-copy": "~0.4.0"
+  }
 }

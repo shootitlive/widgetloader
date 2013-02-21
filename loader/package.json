@@ -1,22 +1,23 @@
 {
-
-  "name": "example-app",
-  "title": "Example App for WidgeLoader",
-  "version": "2.0.0",
-  "homepage": "http://github.com/shootitlive.com/widgetloader",
+  "name": "widgetloader",
+  "title": "Widget Loader",
+  "version": "1.0.0",
+  "homepage": "http://github.com/shootitlive/widgetloader",
   "author": {
     "name": "Shootitlive, http://shootitlive.com"
   },
   "contributors": [
-    "Emil Stenqvist <emsten@gmail.com>"
+    "Emil Stenqvist <emil@shootitlive.com>"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/shootitlive/widgetloader.git"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
       "grunt": "=0.3.17",
       "grunt-contrib": "=0.3.0"
-  }
+  },
+  "devDependencies": {
+  },
+  "keywords": []
 }

@@ -4,18 +4,18 @@ This is a skeleton for creating an embedded Javascript widget using
 RequireJS, grunt and tightly controlled namespacing.
 
 The idea is that this repository is for building the loader file - but
-as a start, an `example-app` is included as well.
+as a start, an example app is included as well.
 
 # Getting started
 
 ```bash
 $ npm install
 $ grunt
-$ python -m SimpleHTTPServer
-Serving HTTP on 0.0.0.0 port 8000 ...
+$ grunt browser
 ```
 
-Open your browser and go to [http://localhost:8000/example-app/](http://localhost:8000/example-app/).
+This will start watching the source code 
+Open your browser and go to [http://localhost:9001/example-app/](http://localhost:8000/example-app/).
 This will load the `example-app`. To use this with your own widget -
 copy the skeleton code. This includes
 
@@ -62,7 +62,7 @@ someone else's site.
 
 # Adding 3rd party libraries
 
-Have a look in `example-app/vendor`. To make each library export only a
+Have a look in `vendor`. To make each library export only a
 local variable, one has to perform various tricks.
 
 ```javascript
@@ -84,7 +84,7 @@ define('backbone', [ 'underscore', 'jquery' ], function(_, $) {
 The approach differs somewhat for each library - but most sane libraries
 have their exports at the top or bottom of the source, and shouldn't be
 too hard to figure out. Also there's a module for listing added globals
-in `example-app/app/js/list_globals.js`.
+in `app/js/list_globals.js`.
 
 # Authors
 - [Emil Stenqvist](http://github.com/emilisto) at [Shootitlive AB](http://shootitlive.com)

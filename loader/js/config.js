@@ -7,12 +7,14 @@
 var config, exports, namespace;
 
 config = {
-  namespace: 'WidgetGlobal'
+  namespace: 'WidgetGlobal',
+  baseUrl: '//localhost:9001/dist/release'
 };
 
 if(typeof window !== 'undefined') {
   exports = window;
-  namespace = exports[config.namespace] = {};
+  if(!exports[config.namespace]) exports[config.namespace] = {};
+  namespace = exports[config.namespace];
 }
 
 // This is so we can require() it in grunt.js
