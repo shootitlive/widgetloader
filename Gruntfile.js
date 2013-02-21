@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 
     shell: {
       openBrowser: {
-        command: 'open http://localhost:<%= connect.livereload.options.port %>'
+        command: 'open http://localhost:<%= connect.livereload.options.port %>/tests/'
       },
       createLoaderFile: {
         command: 'grunt',
